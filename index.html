@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css"> 
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Personal identification</h1>
+        </header>
+        <p id="description">Write down your personality data</p>
+        <form id="survey-form">
+            <div class="input-headings">
+                <label for="name" id="name-label" style="color: black;"><b>Full name:</b></label>
+                <input id="name" type="text" name="name" placeholder="Name" class="form-inputs" required> </input> 
+            <br>
+            <label for="email" id="email-label" style="color: black;"><b>Email</b></label>
+            <input id="email" type="email" placeholder="Email" class="form-inputs" required> </input>
+            <br>
+            <br>
+            <label for="number" id="number-label" style="color: black;"><b>Age</b></label>
+            <input id="number" type="number" name="number" min="18" max="100" placeholder="18" class="form-inputs" required> </input>
+            <br>
+            <br>
+            <label for="dropdown" id="select-sex" style="color: black;"><b>Sex</b></label>
+            <select id="dropdown">
+                <option value="none">None</option>
+                <option value="men">Men</option>
+                <option value="woman">Woman</option>
+            </select>
+            <br>
+            <br>
+            <label for="personality" id="personalitytitle"> <b>Principal Personality:</b> </label>
+            <br>
+            <input id="personality" type="radio" name="thought" value="happy">
+            <label for="personality"> Happy </label>
+            <br>
+            <input id="personality" type="radio" name="thought" value="brave">
+            <label for="personality"> Brave </label>
+            <br>
+            <input id="personality" type="radio" name="thought" value="serious">
+            <label for="personality"> Serious </label>
+            <br>
+            <input id="personality" type="radio" name="thought" value="shy">
+            <label for="personality"> Shy </label>
+            <br>
+            <label for="more personality" id="moretitle"><b>More personality</b></label>
+            <br>
+            <input id="checkbox" type="checkbox" name="More personality" value="selfish">
+            <label for="checkbox">Selfish</label>
+            <br>
+            <input for="checkbox" type="checkbox" name="More personality" value="honest">
+            <label for="checkbox">Honest</label>
+            <br>
+            <input for="checkbox" type="checkbox" name="More personality" value="quiet">
+            <label for="checkbox">Quiet</label>
+            <br>
+            <input for="checkbox" type="checkbox" name="More personality" value="ambitious">
+            <label for="checkbox">Ambitious</label>
+            <br>
+            <input for="checkbox" type="checkbox" name="more personality" value="more">
+            <label for="checkbox">Other</label>
+            <br>
+            <label id="textareatitle"><b>Your description: </b></label>
+            <br>
+            <textarea id="textarea" name="description" rows="5" cols="59.5"></textarea>
+            <br>
+            <div id="buttom">
+                <input id="submit" type="submit" value="Send" class="submit-button">
+            </div>
+            </div>
+        </form>
+    </body>
+</html>
